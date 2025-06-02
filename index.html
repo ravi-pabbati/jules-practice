@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compound Interest Calculator</h1>
+        <form id="interestForm">
+            <div class="input-group">
+                <label for="principal">Principal (P):</label>
+                <input type="number" id="principal" step="0.01" placeholder="Enter principal amount">
+            </div>
+
+            <div class="input-group">
+                <label for="rate">Annual Interest Rate (R %):</label>
+                <input type="number" id="rate" step="0.01" placeholder="Enter annual rate">
+            </div>
+
+            <div class="input-group">
+                <label for="time">Time Period (Years T):</label>
+                <input type="number" id="time" step="0.1" placeholder="Enter time in years">
+            </div>
+
+            <div class="input-group">
+                <label for="frequency">Compounding Frequency (n per year):</label>
+                <input type="number" id="frequency" step="1" placeholder="Enter times compounded per year">
+            </div>
+
+            <div class="input-group">
+                <label for="amount">Final Amount (A):</label>
+                <input type="number" id="amount" step="0.01" placeholder="Enter final amount">
+            </div>
+
+            <div class="input-group">
+                <label for="solveFor">Solve for:</label>
+                <select id="solveFor">
+                    <option value="amount" selected>Final Amount (A)</option>
+                    <option value="principal">Principal (P)</option>
+                    <option value="rate">Rate (R)</option>
+                    <option value="time">Time (T)</option>
+                    <option value="frequency">Compounding Frequency (n)</option>
+                </select>
+            </div>
+
+            <button type="submit" id="calculateButton">Calculate</button>
+        </form>
+
+        <div id="result">
+            <p>Result will be displayed here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
